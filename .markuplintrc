@@ -1,0 +1,10 @@
+{
+  "parser": {
+    ".html$": "@markuplint/html-parser"
+  },
+  "rules": {
+    "markuplint/invalid-attr": true,
+    "markuplint/deprecated-element": true,
+    "markuplint/doctype": true
+  }
+}

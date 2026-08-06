@@ -1,0 +1,26 @@
+{
+  "name": "photoniq-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@secretlint/secretlint-rule-preset-recommend": "^13.0.4",
+    "eslint": "^10.8.0",
+    "globals": "^17.9.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.3.0",
+    "markuplint": "^4.18.3",
+    "prettier": "^3.9.6",
+    "secretlint": "^13.0.4",
+    "stylelint": "^17.14.1",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
