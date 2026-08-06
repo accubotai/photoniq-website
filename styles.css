@@ -59,7 +59,7 @@ h3 {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1.5rem 5%;
+  padding: 1rem 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,6 +67,7 @@ h3 {
   backdrop-filter: blur(15px);
   border-bottom: 1px solid rgb(255 255 255 / 5%);
   z-index: 1000;
+  height: 80px;
 }
 
 .logo {
@@ -136,46 +137,58 @@ h3 {
   align-items: center;
   justify-content: center;
   position: relative;
-  padding: 80px 5% 0; /* Account for navbar */
+
+  /* Use padding to avoid navbar, keep centering balanced */
+  padding: 80px 5% 0;
 }
 
 .slide-content {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1100px; /* Tightened from 1400px to fix disconnected layout */
   margin: 0 auto;
 }
 
 .dual-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 3rem; /* Tightened from 4rem */
   align-items: center;
 }
 
+/* Images */
 .slide-img {
   width: 100%;
-  border-radius: 20px;
+  max-height: 55vh; /* Prevents overflow on large screens */
+  object-fit: cover;
+  border-radius: 12px;
   border: 1px solid rgb(255 255 255 / 10%);
   position: relative;
   z-index: 2;
   box-shadow: 0 20px 50px rgb(0 0 0 / 50%);
 }
 
+.portrait-img {
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
 .slide-text {
   font-size: 1.1rem;
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
+  line-height: 1.7;
 }
 
 /* Specific Slide Elements */
 .hero-title {
   font-size: clamp(2.5rem, 5vw + 1rem, 5rem);
   line-height: 1.1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .hero-subtitle {
-  font-size: clamp(1.1rem, 1.5vw + 0.5rem, 1.5rem);
+  font-size: clamp(1.1rem, 1.5vw + 0.5rem, 1.3rem);
   color: var(--text-secondary);
   margin-bottom: 2.5rem;
 }
@@ -193,7 +206,7 @@ h3 {
   transform: translate(-50%, -50%);
   width: 120%;
   height: 120%;
-  background: radial-gradient(circle, rgb(255 42 85 / 20%) 0%, rgb(0 0 0 / 0%) 70%);
+  background: radial-gradient(circle, rgb(255 42 85 / 15%) 0%, rgb(0 0 0 / 0%) 70%);
   z-index: 1;
 }
 
@@ -202,8 +215,8 @@ h3 {
   background: var(--bg-card);
   backdrop-filter: blur(20px);
   border: 1px solid rgb(255 255 255 / 5%);
-  border-radius: 24px;
-  padding: 3rem;
+  border-radius: 16px;
+  padding: 2.5rem;
   box-shadow: 0 30px 60px rgb(0 0 0 / 50%);
 }
 
@@ -217,63 +230,64 @@ h3 {
 /* Tech Grid */
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
 }
 
 .tech-card {
-  padding: 2.5rem;
+  padding: 2rem;
   transition:
     transform 0.3s,
     background 0.3s;
 }
 
 .tech-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   background: rgb(255 255 255 / 5%);
 }
 
 .tech-card .icon {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .tech-card h3 {
-  font-size: clamp(1.25rem, 2vw + 0.5rem, 1.75rem);
-  margin-bottom: 1rem;
+  font-size: clamp(1.25rem, 2vw + 0.5rem, 1.5rem);
+  margin-bottom: 0.8rem;
 }
 
 /* Applications */
 .app-list {
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
-  max-width: 900px;
+  gap: 2rem;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .app-item {
   border-left: 2px solid var(--neon-cyan);
-  padding-left: 2rem;
+  padding-left: 1.5rem;
+  text-align: left;
 }
 
 .app-item h3 {
-  font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem);
+  font-size: clamp(1.3rem, 3vw + 0.5rem, 1.8rem);
   margin-bottom: 0.5rem;
 }
 
 /* Founder */
 .founder-name {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: var(--neon-red);
 }
 
 .founder-stats {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   list-style: none;
 }
 
@@ -288,6 +302,12 @@ h3 {
 }
 
 /* Forms */
+.form-card {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -295,8 +315,8 @@ h3 {
 }
 
 .contact-form input {
-  padding: 1rem;
-  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
   border: 1px solid rgb(255 255 255 / 10%);
   background: rgb(255 255 255 / 5%);
   color: white;
@@ -310,28 +330,12 @@ h3 {
 }
 
 /* Animations */
-.float-anim {
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 .fade-in-up {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(20px);
   transition:
-    opacity 0.8s ease-out,
-    transform 0.8s ease-out;
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 .fade-in-up.visible {
@@ -371,16 +375,21 @@ h3 {
     border-top: 2px solid var(--neon-cyan);
     padding-left: 0;
     padding-top: 1rem;
+    text-align: center;
   }
 
   .deck-container {
-    scroll-snap-type: none; /* Disable snapping on mobile for easier reading */
+    scroll-snap-type: none; /* Disable snapping on mobile */
   }
 
   .slide {
     height: auto;
     min-height: 100vh;
-    padding-top: 120px;
+    padding-top: 100px;
     padding-bottom: 60px;
+  }
+
+  .slide-img {
+    max-height: 40vh;
   }
 }
