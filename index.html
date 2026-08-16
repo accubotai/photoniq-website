@@ -29,17 +29,31 @@
     </nav>
 
     <div class="deck-container">
-      <!-- Slide 1: Hero -->
+      <!-- 1. Title / Cover -->
       <section id="slide-hero" class="slide">
         <div class="slide-content text-center fade-in-up">
           <h1 class="hero-title">
             The Speed of <span class="neon-text gradient-text">Light</span>.<br />The Power of
             Intelligence.
           </h1>
-          <p class="hero-subtitle" style="max-width: 700px; margin: 0 auto 2.5rem">
-            Multiplexed metasurface optical neural networks that process AI instantly, with a
-            fraction of the energy.
+          <p class="hero-subtitle" style="max-width: 800px; margin: 0 auto 1.5rem">
+            A fabless semiconductor company building multiplexed metasurface optical neural networks
+            to process AI at the speed of light, using a fraction of the energy of traditional GPUs.
           </p>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              gap: 1rem;
+              margin-bottom: 2.5rem;
+              color: var(--text-secondary);
+              font-weight: 600;
+              flex-wrap: wrap;
+            "
+          >
+            <span>Backed by $2M Seed</span> &bull; <span>30+ Foundational Patents</span> &bull;
+            <span>Targeting NASDAQ Uplisting</span>
+          </div>
           <div class="hero-cta" style="margin-bottom: 3rem">
             <a href="#slide-problem" class="btn-primary">Enter the Deck</a>
           </div>
@@ -53,18 +67,22 @@
         </div>
       </section>
 
-      <!-- Slide 2: Problem -->
+      <!-- 2. Problem -->
       <section id="slide-problem" class="slide">
         <div class="slide-content dual-col">
           <div class="text-col fade-in-up">
-            <h2 class="section-title">The AI Energy Crisis</h2>
+            <h2 class="section-title">1. The Problem: "Watts & Wafers"</h2>
             <p class="slide-text">
-              Traditional silicon electronic chips are hitting the fundamental physical limits of
-              Moore's Law. Training and running foundation models like GPT-4 requires massive data
-              centers that generate extreme heat and consume unsustainable amounts of electricity.
+              The AI "supercycle" has hit a physical wall. Traditional electronic AI chips (GPUs)
+              are bottlenecked by thermal limits, latency, and unsustainable power consumption.
+            </p>
+            <p class="slide-text">
+              Hyperscale data centers, LLM operators, and autonomous vehicle manufacturers are
+              constrained by energy availability, not compute logic.
             </p>
             <p class="highlight-text">
-              Silicon cannot scale fast enough to meet exponential AI demand.
+              Incremental electronic node shrinking cannot bypass the fundamental physics limits of
+              electron-based compute and copper interconnects.
             </p>
           </div>
           <div class="visual-col fade-in-up" style="transition-delay: 0.2s">
@@ -73,81 +91,290 @@
         </div>
       </section>
 
-      <!-- Slide 3: Solution & IP -->
+      <!-- 3. Solution -->
       <section id="slide-solution" class="slide">
         <div class="slide-content">
-          <h2 class="section-title fade-in-up text-center">The Moat: Computing with Light</h2>
+          <h2 class="section-title fade-in-up text-center">
+            2. The Solution: Computing with Light
+          </h2>
+          <p
+            class="slide-text text-center fade-in-up"
+            style="max-width: 800px; margin: 0 auto 2.5rem"
+          >
+            Using passive, nanophotonic metasurfaces, light passes through our chips and performs
+            complex neural-network inference instantaneously via interference and diffraction.
+          </p>
           <div class="tech-grid">
             <div class="glass-card tech-card fade-in-up" style="transition-delay: 0.1s">
               <div class="icon">⚡</div>
-              <h3>Zero Heat & Latency</h3>
+              <h3>Zero-Energy Inference</h3>
               <p>
-                Computing with light means zero electrical resistance. Processing happens at the
-                speed of light, entirely bypassing thermal bottlenecks.
+                Operations occur passively at the speed of light, entirely bypassing thermal
+                bottlenecks and slashing data center power footprints.
               </p>
             </div>
             <div class="glass-card tech-card fade-in-up" style="transition-delay: 0.2s">
-              <div class="icon">🧠</div>
-              <h3>Multiplexed Parallelism</h3>
+              <div class="icon">📏</div>
+              <h3>Subwavelength Density</h3>
               <p>
-                Our pending patent (US20260073679A1) utilizes multiple wavelengths simultaneously,
-                running distinct AI classification tasks in parallel on a single chip.
+                Unprecedented compute density without bulky active phase-shifters, allowing for
+                massive parallel processing in a microscopic footprint.
               </p>
             </div>
             <div class="glass-card tech-card fade-in-up" style="transition-delay: 0.3s">
-              <div class="icon">🛡️</div>
-              <h3>Defensible IP</h3>
+              <div class="icon">👁️</div>
+              <h3>Zero-Latency Vision</h3>
               <p>
-                Our metasurfaces are designed using proprietary deep learning models. It is
-                physically impossible to reverse-engineer our optical hardware.
+                Enables instantaneous machine vision for autonomous systems, processing visual data
+                at the speed of light.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Slide 4: Market -->
+      <!-- 4. Why Now? -->
+      <section id="slide-why-now" class="slide">
+        <div class="slide-content dual-col">
+          <div class="text-col fade-in-up">
+            <h2 class="section-title">3. Why Now?</h2>
+            <div style="margin-bottom: 2rem">
+              <h3 class="gradient-text">Technological Breakthrough</h3>
+              <p class="slide-text">
+                Our 2023 <em>Science</em> paper proved that we can run multiple parallel channels at
+                a nanometer footprint using engineered-noise multiplexing.
+              </p>
+            </div>
+            <div style="margin-bottom: 2rem">
+              <h3 class="gradient-text">AI Power Crisis</h3>
+              <p class="slide-text">
+                Data center power constraints are now the primary limiting factor for AI scaling,
+                forcing hyperscalers to seek non-electronic architectures.
+              </p>
+            </div>
+            <div>
+              <h3 class="gradient-text">Fab Readiness</h3>
+              <p class="slide-text">
+                Advanced packaging and MPW (Multi-Project Wafer) access at US foundries have finally
+                matured enough to manufacture our metasurfaces at scale.
+              </p>
+            </div>
+          </div>
+          <div
+            class="visual-col fade-in-up glass-card"
+            style="transition-delay: 0.2s; padding: 3rem; text-align: center"
+          >
+            <div style="font-size: 4rem; margin-bottom: 1rem">🔥</div>
+            <h3 style="font-size: 2rem; margin-bottom: 1rem">The Urgency</h3>
+            <p class="slide-text">
+              The market cannot wait for another Moore's Law miracle. The shift to optical compute
+              is an immediate necessity.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Market Size -->
       <section id="slide-market" class="slide">
-        <div class="slide-content">
-          <h2 class="section-title fade-in-up text-center">The Target Market</h2>
-          <div class="app-list">
-            <div class="app-item fade-in-up" style="transition-delay: 0.1s">
-              <h3 class="gradient-text">Hyperscalers (AWS, Google, Azure)</h3>
-              <p>
-                TAM: $120B+. Drastically reducing the massive energy footprint and cooling costs of
-                AI data centers.
+        <div class="slide-content text-center">
+          <h2 class="section-title fade-in-up">4. Market Size</h2>
+          <p class="slide-text fade-in-up" style="max-width: 700px; margin: 0 auto 3rem">
+            Calculated bottom-up targeting the rapidly expanding AI infrastructure space.
+          </p>
+
+          <div
+            class="tech-grid"
+            style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem"
+          >
+            <div
+              class="glass-card tech-card fade-in-up"
+              style="transition-delay: 0.1s; border-color: var(--text-secondary)"
+            >
+              <h3 style="font-size: 2.5rem; color: var(--text-primary); margin-bottom: 0.5rem">
+                $100B+
+              </h3>
+              <h4 class="gradient-text" style="margin-bottom: 1rem">TAM</h4>
+              <p class="slide-text" style="font-size: 0.9rem">
+                Total Addressable Market: Global AI hardware and semiconductor market.
               </p>
             </div>
-            <div class="app-item fade-in-up" style="transition-delay: 0.2s">
-              <h3 class="gradient-text">Autonomous OEMs (Tesla, Waymo)</h3>
-              <p>
-                TAM: $85B+. Enabling instantaneous machine vision in edge devices without the
-                electronic latency or battery drain of standard GPUs.
+            <div
+              class="glass-card tech-card fade-in-up"
+              style="transition-delay: 0.2s; border-color: var(--neon-cyan)"
+            >
+              <h3 style="font-size: 2.5rem; color: var(--text-primary); margin-bottom: 0.5rem">
+                $30B+
+              </h3>
+              <h4 class="gradient-text" style="margin-bottom: 1rem">SAM</h4>
+              <p class="slide-text" style="font-size: 0.9rem">
+                Serviceable Addressable Market: Data center AI accelerators and optical
+                interconnects.
               </p>
             </div>
-            <div class="app-item fade-in-up" style="transition-delay: 0.3s">
-              <h3 class="gradient-text">Secure Defense & Communications</h3>
-              <p>
-                TAM: $45B+. Utilizing unhackable physical optical encryption for high-rate secure
-                data storage and transmission.
+            <div
+              class="glass-card tech-card fade-in-up"
+              style="transition-delay: 0.3s; border-color: var(--neon-red)"
+            >
+              <h3 style="font-size: 2.5rem; color: var(--text-primary); margin-bottom: 0.5rem">
+                $3B-$5B
+              </h3>
+              <h4 class="gradient-text" style="margin-bottom: 1rem">SOM</h4>
+              <p class="slide-text" style="font-size: 0.9rem">
+                Serviceable Obtainable Market: Near-term edge inference and high-efficiency
+                hyperscaler inference chips.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Slide 5: Team -->
-      <section id="slide-team" class="slide">
+      <!-- 6. Product / Demo -->
+      <section id="slide-product" class="slide">
         <div class="slide-content dual-col">
           <div class="visual-col fade-in-up">
             <img
-              src="assets/founder_portrait.jpg"
-              alt="Dr. Yongmin Liu"
-              class="slide-img portrait-img"
+              src="assets/architecture_diagram.jpg"
+              alt="Architecture Diagram"
+              class="slide-img"
             />
           </div>
           <div class="text-col fade-in-up" style="transition-delay: 0.2s">
-            <h2 class="section-title">World-Class Technical Pedigree</h2>
+            <h2 class="section-title">5. The Product</h2>
+            <h3 class="gradient-text" style="margin-bottom: 0.5rem">
+              Multiplexed Optical Neural Networks
+            </h3>
+            <p class="slide-text">
+              Utilizing multiple wavelengths and polarizations, a single microscopic metasurface
+              runs multiple AI classification tasks in parallel (Patent US20260073679A1).
+            </p>
+
+            <h3 class="gradient-text" style="margin-top: 1.5rem; margin-bottom: 0.5rem">
+              Generative AI at the Physical Layer
+            </h3>
+            <p class="slide-text">
+              Metasurfaces acting as physical decoders in Variational Autoencoders, generating
+              structured data from optical noise.
+            </p>
+
+            <h3 class="gradient-text" style="margin-top: 1.5rem; margin-bottom: 0.5rem">
+              Unhackable Optical Encryption
+            </h3>
+            <p class="slide-text">
+              Data encoded in light is physically impossible to decode without the exact,
+              proprietary physical metasurface.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Traction -->
+      <section id="slide-traction" class="slide">
+        <div class="slide-content text-center">
+          <h2 class="section-title fade-in-up">6. Traction</h2>
+          <div class="tech-grid">
+            <div class="glass-card tech-card fade-in-up" style="transition-delay: 0.1s">
+              <h3 class="gradient-text" style="font-size: 2rem">$2M Seed</h3>
+              <p class="slide-text">
+                Successfully closed initial funding to validate the core architecture and build out
+                the team.
+              </p>
+            </div>
+            <div class="glass-card tech-card fade-in-up" style="transition-delay: 0.2s">
+              <h3 class="gradient-text" style="font-size: 2rem">30+ Patents</h3>
+              <p class="slide-text">
+                Robust foundational IP portfolio including critical co-pending utility patents
+                protecting the multiplexing architecture.
+              </p>
+            </div>
+            <div class="glass-card tech-card fade-in-up" style="transition-delay: 0.3s">
+              <h3 class="gradient-text" style="font-size: 2rem">Top-Tier Validation</h3>
+              <p class="slide-text">
+                Flagship IP published in <em>Science</em> and <em>Nature Photonics</em>. Backed by
+                the Northeastern University CRI spinout ecosystem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Business Model -->
+      <section id="slide-business" class="slide">
+        <div class="slide-content dual-col">
+          <div class="text-col fade-in-up">
+            <h2 class="section-title">7. Business Model</h2>
+            <p class="slide-text">
+              We operate a capital-light, <strong>Fabless Semiconductor</strong> model, achieving
+              high gross margins by leveraging shared foundry costs (MPW runs) rather than owned fab
+              capex.
+            </p>
+
+            <div style="margin-top: 2rem">
+              <h3 class="gradient-text" style="margin-bottom: 0.5rem">1. Hardware Sales</h3>
+              <p class="slide-text">
+                Direct sales of metasurface AI co-processors to hyperscalers and robotics OEMs.
+              </p>
+            </div>
+
+            <div style="margin-top: 1.5rem">
+              <h3 class="gradient-text" style="margin-bottom: 0.5rem">2. IP Licensing</h3>
+              <p class="slide-text">
+                Licensing specific optical neural network architectures to tier-1 defense and
+                telecom primes.
+              </p>
+            </div>
+          </div>
+          <div
+            class="visual-col fade-in-up glass-card"
+            style="transition-delay: 0.2s; padding: 3rem; text-align: center"
+          >
+            <div style="font-size: 4rem; margin-bottom: 1rem">💸</div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem">High Gross Margins</h3>
+            <p class="slide-text">
+              Typical of semiconductor IP, our model scales efficiently as manufacturing is
+              outsourced to established US foundries.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. Competition & Moat -->
+      <section id="slide-competition" class="slide">
+        <div class="slide-content dual-col">
+          <div class="visual-col fade-in-up">
+            <img src="assets/competitive_matrix.jpg" alt="Competitive Matrix" class="slide-img" />
+          </div>
+          <div class="text-col fade-in-up" style="transition-delay: 0.2s">
+            <h2 class="section-title">8. Competition & Moat</h2>
+            <p class="slide-text">
+              We compete against electronic GPUs (Nvidia/AMD) and active silicon photonics
+              (Lightmatter, Ayar Labs).
+            </p>
+            <h3 class="gradient-text" style="margin-top: 1.5rem; margin-bottom: 0.5rem">
+              The Moat (Why we win)
+            </h3>
+            <ul class="slide-text" style="list-style-position: inside; padding-left: 0">
+              <li style="margin-bottom: 0.5rem">
+                <strong>Passive Flat Optics:</strong> Unlike Lightmatter, we use passive
+                metasurfaces, eliminating active thermal tuning overhead and massively shrinking the
+                footprint.
+              </li>
+              <li style="margin-bottom: 0.5rem">
+                <strong>Deep IP Protection:</strong> You cannot reverse-engineer our chips without
+                the proprietary AI models that inverse-designed them.
+              </li>
+              <li style="margin-bottom: 0.5rem">
+                <strong>Founder Pedigree:</strong> Unmatched domain expertise with an h-index > 70.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. Team -->
+      <section id="slide-team" class="slide">
+        <div class="slide-content dual-col">
+          <div class="text-col fade-in-up">
+            <h2 class="section-title">9. Team & Advisors</h2>
             <h3 class="founder-name">Dr. Yongmin Liu, CEO & Founder</h3>
             <p class="slide-text">
               Tenured Professor at Northeastern University. Ph.D. from UC Berkeley. A global pioneer
@@ -158,34 +385,86 @@
               <li><strong>18,450+</strong> Academic Citations (h-index > 70)</li>
               <li><strong>30+</strong> Patents across optical hardware</li>
             </ul>
-            <p class="highlight-text" style="margin-top: 2rem">
-              Currently hiring VP of Hardware Engineering & CCO.
+            <p class="slide-text" style="margin-top: 1.5rem">
+              <strong>Advisory Board:</strong> Supported by a highly targeted board of crossover
+              investors, university TTO leaders, and prime photonics executives actively guiding the
+              company toward public markets.
             </p>
+          </div>
+          <div class="visual-col fade-in-up" style="transition-delay: 0.2s">
+            <img
+              src="assets/founder_portrait.jpg"
+              alt="Dr. Yongmin Liu"
+              class="slide-img portrait-img"
+            />
           </div>
         </div>
       </section>
 
-      <!-- Slide 6: Ask -->
+      <!-- 11. Financial Projections -->
+      <section id="slide-financials" class="slide">
+        <div class="slide-content dual-col">
+          <div class="text-col fade-in-up">
+            <h2 class="section-title">10. Financial Projections</h2>
+            <p class="slide-text">
+              Our 5-year forecast highlights the transition from NRE (Non-Recurring Engineering) and
+              pilot revenue in Years 1-2, to scalable fabless hardware margins in Years 3-5.
+            </p>
+            <p class="slide-text">
+              <strong>Lean Burn Rate:</strong> Maintained via virtual-first operations and
+              outsourced US fab tape-outs (AIM Photonics) rather than owned infrastructure.
+            </p>
+            <p class="highlight-text">Clear path to profitability and Nasdaq uplisting.</p>
+          </div>
+          <div class="visual-col fade-in-up" style="transition-delay: 0.2s">
+            <img src="assets/financial_chart.jpg" alt="Financial Projections" class="slide-img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- 12. The Ask -->
       <section id="slide-ask" class="slide">
         <div class="slide-content text-center fade-in-up">
-          <h2 class="section-title">The Series A</h2>
+          <h2 class="section-title">11. The Ask: Series A</h2>
           <p
             class="slide-text"
             style="
               max-width: 800px;
-              margin: 0 auto 3rem auto;
+              margin: 0 auto 2rem auto;
               font-size: 1.2rem;
               color: var(--text-secondary);
             "
           >
-            We are currently raising a Series A to fund our first commercial tape-out (manufacturing
-            prototype) and expand our engineering team in Boston.
+            Raising Series A capital to transition from seed validation to commercial tape-out.
           </p>
+
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              gap: 2rem;
+              margin-bottom: 3rem;
+              flex-wrap: wrap;
+            "
+          >
+            <div class="glass-card" style="padding: 1.5rem; min-width: 200px">
+              <h3 class="gradient-text">60%</h3>
+              <p style="font-size: 0.9rem">R&D & MPW Fab Tape-outs</p>
+            </div>
+            <div class="glass-card" style="padding: 1.5rem; min-width: 200px">
+              <h3 class="gradient-text">30%</h3>
+              <p style="font-size: 0.9rem">Engineering Talent Expansion</p>
+            </div>
+            <div class="glass-card" style="padding: 1.5rem; min-width: 200px">
+              <h3 class="gradient-text">10%</h3>
+              <p style="font-size: 0.9rem">Corporate BD & Pilot Sales</p>
+            </div>
+          </div>
 
           <div class="glass-card form-card">
             <h3 style="font-size: 2rem; margin-bottom: 0.5rem">Request Access</h3>
             <p style="margin-bottom: 2rem; color: var(--text-secondary)">
-              Access our technical Data Room and Cap Table.
+              Access our technical Data Room and full financial models.
             </p>
             <form class="contact-form" action="#" method="POST">
               <input type="text" placeholder="Investor Name / Firm" required />
